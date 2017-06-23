@@ -1,0 +1,23 @@
+secirity:
+  oauth2:
+    client:
+      clientId: account-service
+      clientSecret: 123123123
+      accountTokenUri: http://localhost:5000/uaa/oauth/token
+      grant-type: client_credintials
+      scope: server
+      
+      
+spring:
+  data:
+    mongodb:
+      host: account-mongodb
+      username: shukri
+      password: 123123123
+      database: localpresent
+      port: 27017
+      
+      
+server:
+  context-path: /account
+  port: 6000
